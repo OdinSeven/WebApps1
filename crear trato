@@ -1,0 +1,131 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Crear Trato.aspx.cs" Inherits="WebAp.interfas.AsignarTarea" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 147px;
+        }
+        .auto-style4 {
+            width: 118px;
+        }
+        .auto-style5 {
+            width: 197px;
+        }
+        .auto-style6 {
+            width: 147px;
+            height: 26px;
+        }
+        .auto-style7 {
+            width: 197px;
+            height: 26px;
+        }
+        .auto-style8 {
+            width: 118px;
+            height: 26px;
+        }
+        .auto-style9 {
+            height: 26px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        Crear trato&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="Button1" runat="server" Text="Guardar" />
+        <asp:Button ID="Button2" runat="server" Text="Guardar y nuevo" />
+        <asp:Button ID="Button3" runat="server" Text="Cancelar" />
+    
+    </div>
+        <p>
+            Informacion de trato</p>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style2">nombre de trato</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style4">importe</td>
+                <td>
+                    <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">nombre de cuenta</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style4">fecha de cliente</td>
+                <td>
+                    <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style6">tipo</td>
+                <td class="auto-style7">
+                    <asp:DropDownList ID="DropDownList1" runat="server" Height="18px" Width="128px">
+                        <asp:ListItem>none</asp:ListItem>
+                        <asp:ListItem>negocios existentes</asp:ListItem>
+                        <asp:ListItem>nuevo negocio</asp:ListItem>
+                        <asp:ListItem>new business</asp:ListItem>
+                        <asp:ListItem>exiting business</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+                <td class="auto-style8">fase</td>
+                <td class="auto-style9">
+                    <asp:DropDownList ID="DropDownList3" runat="server" Height="16px" Width="127px">
+                        <asp:ListItem>none</asp:ListItem>
+                        <asp:ListItem>clasificacion</asp:ListItem>
+                        <asp:ListItem>necesita analisis</asp:ListItem>
+                        <asp:ListItem>propuesta de valor</asp:ListItem>
+                        <asp:ListItem>identifica responsables</asp:ListItem>
+                        <asp:ListItem>cotizacion de propuesta</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">siguiente paso</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style4">probabilidad(%)</td>
+                <td>
+                    <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">fuente de posible cliente</td>
+                <td class="auto-style5">
+                    <asp:DropDownList ID="DropDownList2" runat="server" Height="16px" Width="126px">
+                    </asp:DropDownList>
+                </td>
+                <td class="auto-style4">ingreso empleado</td>
+                <td>
+                    <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">nombre de contacto</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style4">fuente de campaña</td>
+                <td>
+                    <asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+        </table>
+        <p>
+            Informacion de la descripcion</p>
+        <asp:TextBox ID="TextBox1" runat="server" Height="16px" Width="171px"></asp:TextBox>
+    </form>
+</body>
+</html>
