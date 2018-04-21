@@ -1,0 +1,55 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CrearLlamada.aspx.cs" Inherits="WebAp.interfas.CrearLlamada" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        Crear Llamada</div>
+        <table class="auto-style1">
+            <tr>
+                <td>Nombre de contacto</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>asunto</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>propocito de la llamada</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>relacionado con</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>tipo de llamada</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+        <p>
+            Detalles de llamadas</p>
+        <asp:RadioButton ID="RadioButton1" runat="server" Text="llamada actual" />
+        <asp:RadioButton ID="RadioButton2" runat="server" Text="llamada completada" />
+        <asp:RadioButton ID="RadioButton3" runat="server" Text="programar" />
+        <p>
+            descripcion</p>
+        <p>
+            resultado de llamada</p>
+        <asp:Button ID="Button1" runat="server" Text="cancelar" />
+        <asp:Button ID="Button2" runat="server" Text="iniciar llamada" />
+    </form>
+</body>
+</html>
