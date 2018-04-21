@@ -1,0 +1,143 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminDatoBasico.aspx.cs" Inherits="WebAp.interfas.AdminDatoBasico" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 362px;
+        }
+        .auto-style3 {
+            width: 362px;
+            height: 23px;
+        }
+        .auto-style4 {
+            height: 23px;
+        }
+        .auto-style5 {
+            width: 362px;
+            height: 30px;
+        }
+        .auto-style6 {
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        Crear posible cliente&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        <asp:Button ID="Button1" runat="server" Text="Guardar" OnClick="Button1_Click" />
+        <asp:Button ID="Button2" runat="server" Text="Guadar y nuevo" Width="107px" />
+        <asp:Button ID="Button3" runat="server" Text="Cancelar" />
+    
+    </div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style2">Nombre
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                </td>
+                <td>empresa&nbsp;&nbsp; <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style5">Titulo&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style6">apellido&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">telefono&nbsp; <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                </td>
+                <td>correo electronico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">movil&nbsp;&nbsp;&nbsp; &nbsp; <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                </td>
+                <td>fax&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">fuente de posible cliente<asp:DropDownList ID="DropDownList1" runat="server">
+                    <asp:ListItem>none</asp:ListItem>
+                    <asp:ListItem>aviso</asp:ListItem>
+                    <asp:ListItem>llamada no solicitada</asp:ListItem>
+                    <asp:ListItem>recomendacion</asp:ListItem>
+                    <asp:ListItem>recomendacion externa</asp:ListItem>
+                    <asp:ListItem>tienda en linea</asp:ListItem>
+                    <asp:ListItem></asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+                <td class="auto-style4">sitio web&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">sector&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:DropDownList ID="DropDownList2" runat="server">
+                    <asp:ListItem>none</asp:ListItem>
+                    <asp:ListItem>asp</asp:ListItem>
+                    <asp:ListItem>oem de datos</asp:ListItem>
+                    <asp:ListItem>erp</asp:ListItem>
+                    <asp:ListItem>gobierno externo</asp:ListItem>
+                    <asp:ListItem>empresa grande</asp:ListItem>
+                    <asp:ListItem></asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+                <td>estado de pocible cliente&nbsp;&nbsp; <asp:DropDownList ID="DropDownList3" runat="server">
+                    <asp:ListItem>none</asp:ListItem>
+                    <asp:ListItem>intento de contacto</asp:ListItem>
+                    <asp:ListItem>contactar en el futuro</asp:ListItem>
+                    <asp:ListItem>contactado</asp:ListItem>
+                    <asp:ListItem>cliente no solicido</asp:ListItem>
+                    <asp:ListItem>cliente perdido</asp:ListItem>
+                    <asp:ListItem></asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">ingreso anuales&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                </td>
+                <td>cantidad empleados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">no particion de correo electronico<asp:CheckBox ID="CheckBox1" runat="server" />
+                </td>
+                <td>calificacion&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:DropDownList ID="DropDownList4" runat="server">
+                    <asp:ListItem>none</asp:ListItem>
+                    <asp:ListItem>adquirido</asp:ListItem>
+                    <asp:ListItem>activo</asp:ListItem>
+                    <asp:ListItem>fallo de mercado</asp:ListItem>
+                    <asp:ListItem>proyecto cancelado</asp:ListItem>
+                    <asp:ListItem>apagar</asp:ListItem>
+                    <asp:ListItem></asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td>id de skype&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox12" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td>twiter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox13" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td>correo electronico secundario&nbsp;&nbsp; <asp:TextBox ID="TextBox14" runat="server"></asp:TextBox>
+                &nbsp;
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
