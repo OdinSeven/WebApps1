@@ -1,0 +1,124 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CrearCampaña.aspx.cs" Inherits="WebAp.interfas.CrearCampaña" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 212px;
+        }
+        .auto-style3 {
+            width: 212px;
+            height: 23px;
+        }
+        .auto-style4 {
+            height: 23px;
+        }
+        .auto-style5 {
+            width: 261px;
+        }
+        .auto-style6 {
+            height: 23px;
+            width: 261px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        Crear campaña&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="Button1" runat="server" Text="Guardar" />
+        <asp:Button ID="Button2" runat="server" Text="Guardar y nuevo" />
+        <asp:Button ID="Button3" runat="server" Text="Cancelar" />
+    
+    </div>
+        <p>
+            Informacion de campaña</p>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style2">nombre de campaña</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                </td>
+                <td>tipo</td>
+                <td>
+                    <asp:DropDownList ID="DropDownList1" runat="server">
+                        <asp:ListItem>none</asp:ListItem>
+                        <asp:ListItem>conferencia</asp:ListItem>
+                        <asp:ListItem>seminario web</asp:ListItem>
+                        <asp:ListItem>expocicion comercial</asp:ListItem>
+                        <asp:ListItem>relaciones publicas</asp:ListItem>
+                        <asp:ListItem>socios</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">fecha inicio</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                </td>
+                <td>estado</td>
+                <td>
+                    <asp:DropDownList ID="DropDownList2" runat="server" Height="16px" Width="146px">
+                        <asp:ListItem>none</asp:ListItem>
+                        <asp:ListItem>planeacion</asp:ListItem>
+                        <asp:ListItem>activo</asp:ListItem>
+                        <asp:ListItem>inactivo</asp:ListItem>
+                        <asp:ListItem>completo</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">ingreso esperado</td>
+                <td class="auto-style6">
+                    <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style4">fecha de finalizacion</td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="TextBox7" runat="server" Width="136px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">coste real</td>
+                <td class="auto-style6">
+                    <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style4">coste presupuesto</td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="TextBox8" runat="server" Width="135px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">numeros enviados</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                </td>
+                <td>respuesta esperada</td>
+                <td>
+                    <asp:TextBox ID="TextBox9" runat="server" Width="135px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">Informacion Descricion</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:TextBox ID="TextBox6" runat="server" Width="196px"></asp:TextBox>
+                </td>
+                <td class="auto-style5">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
