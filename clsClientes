@@ -1,0 +1,85 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data;
+using System.Data.SqlClient;
+
+
+namespace WebAp.logico.clases
+{
+    public class clsClientes
+    {
+
+        SqlConnection sqlConnection = null;
+        SqlCommand cmd = null;
+        SqlDataAdapter sqlAdapter = null;
+        SqlParameter sqlParameter = null;
+
+        string stConexion;
+
+        public clsClientes()
+        {
+
+            clsConexion obclsConexion = new clsConexion();
+            stConexion = obclsConexion.getConexion();
+
+        }
+
+        public string stInsertarClientes(string nombre, string titulo, string telefono,
+            string movil,
+            int ingresosanual,
+            string empresa,
+            string apellido,
+            string correoelectronico,
+            string fax,
+            string sitioweb,
+            int catidadempleado,
+            string idskype,
+            string twiter,
+            string correodos)
+        {
+
+            try
+            {
+
+                sqlConnection = new SqlConnection(stConexion);
+                sqlConnection.Open();
+
+                SqlCommand = new SqlCommand("spInsertarClientes",sqlConnection);
+                SqlCommand.CommandType = CommandType.StoredProcedure;
+
+             SqlCommand.parameters.add(new SqlParameter("@cliePrimerNombre",nombre));
+             SqlCommand.parameters.add(new SqlParameter("@clieTitulo", titulo));
+             SqlCommand.parameters.add(new SqlParameter("@clieTelefono", telefono));
+             SqlCommand.parameters.add(new SqlParameter("@clieMovil", movil));
+             SqlCommand.parameters.add(new SqlParameter("@clieIngresosAnuales", ingresosanual));
+             SqlCommand.parameters.add(new SqlParameter("@clieEmpresa", empresa));
+             SqlCommand.parameters.add(new SqlParameter("@cliePrimerApellido", apellido));
+             SqlCommand.parameters.add(new SqlParameter("@clieCorreo", correoelectronico));
+             SqlCommand.parameters.add(new SqlParameter("@clieFax", fax));
+             SqlCommand.parameters.add(new SqlParameter("@clieSitioWeb", sitioweb));
+             SqlCommand.parameters.add(new SqlParameter("@clieCantidadEmpleados", catidadempleado));
+             SqlCommand.parameters.add(new SqlParameter("@clieIdSkype", idskype));
+             SqlCommand.parameters.add(new SqlParameter("@clieTwitter", twiter));
+             SqlCommand.parameters.add(new SqlParameter("@clieCorreoSecundario", correodos));
+
+                sqlParameter = new SqlParameter();
+                SqlParameter.ParameterName = "@cMensaje";
+                SqlParameter.SqlDbType = SqlDbType.VarChar;
+                SqlParameter.Size = 50;
+                SqlParameter.Direction = ParameterDirection.Output;
+                SqlCommand.Parameters.Add(SqlParameter);
+                SqlCommand.ExecuteNonQuery();
+
+                return SqlParameter.Values.ToString();
+
+
+
+            }
+            catch(Exception ex) { throw ex; }
+        }
+
+    }
+}
