@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Configuration;
+using System.Configuration;
+
+namespace WebAp.logico.clases
+{
+    public class clsConexion
+    {
+
+        public string getConexion()
+        {
+
+            return ConfigurationManager.ConnectionStrings["Cnx"].ToString();
+        }
+
+    }
+}
