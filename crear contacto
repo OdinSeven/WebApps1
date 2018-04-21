@@ -1,0 +1,136 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CrearContacto.aspx.cs" Inherits="WebAp.interfas.CrearContacto" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 125px;
+        }
+        .auto-style4 {
+            width: 287px;
+        }
+        .auto-style5 {
+            width: 229px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        Crear contacto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="Button1" runat="server" Text="guardar" Width="64px" />
+        <asp:Button ID="Button2" runat="server" Text="guardar y nuevo" />
+        <asp:Button ID="Button3" runat="server" Text="cancelar" />
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style2">nombre</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style4">posible contato</td>
+                <td>
+                    <asp:DropDownList ID="DropDownList1" runat="server">
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">correo electronico</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style4">apellidos</td>
+                <td>
+                    <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">telefono</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style4">titulo</td>
+                <td>
+                    <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">otro telefono</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style4">departamento</td>
+                <td>
+                    <asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">movil</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="TextBox5" runat="server" OnTextChanged="TextBox5_TextChanged"></asp:TextBox>
+                </td>
+                <td class="auto-style4">telefono particular</td>
+                <td>
+                    <asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">asistente</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style4">fax</td>
+                <td>
+                    <asp:TextBox ID="TextBox12" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">reporte a</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style4">fecha de nacimiento</td>
+                <td>
+                    <asp:TextBox ID="TextBox13" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style4">telefono del asistente</td>
+                <td>
+                    <asp:TextBox ID="TextBox14" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style4">no participacion de correo</td>
+                <td>
+                    <asp:CheckBox ID="CheckBox1" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style4">id skype</td>
+                <td>
+                    <asp:TextBox ID="TextBox15" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style4">correo secundario</td>
+                <td>
+                    <asp:TextBox ID="TextBox16" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
